@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlideNavigationController.h"
 
-@interface MaserMenu : UIViewController
+@interface MaserMenu : UIViewController <SlideNavigationControllerDelegate>
 
 @end

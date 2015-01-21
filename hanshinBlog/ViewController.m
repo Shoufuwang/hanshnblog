@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MenuMaster.h"
+
 
 
 @interface ViewController ()
@@ -28,7 +28,7 @@
 }
 - (IBAction)start:(id)sender {
 
-    UIViewController *controller = [[UIViewController alloc] initWithNibName:@"MenuMaster" bundle:[NSBundle mainBundle]];
+    UIViewController *controller = [[UIViewController alloc] initWithNibName:@"MaserMenu" bundle:[NSBundle mainBundle]];
     //if you are using storyboards use this line
    
     

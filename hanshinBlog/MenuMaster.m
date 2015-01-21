@@ -7,16 +7,10 @@
 //
 
 #import "MenuMaster.h"
-#import "SWRevealViewController.h"
-#import "RearViewController.h"
-@interface MenuMaster ()<SWRevealViewControllerDelegate>
-
-- (IBAction)pushExample:(id)sender;
 
 
 
 
-@end
 
 @implementation MenuMaster
 
@@ -24,18 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    RearViewController *rearViewController = [[RearViewController alloc] init];
-    
-   
-    
-    
-    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:rearViewController];
-    
-    
-    UINavigationController *fronNavigationController = [[UINavigationController alloc] initWithRootViewController:MenuMaster];
-    // RearViewController *rearViewController =  [[ RearViewController alloc] init];
-    // [rearViewController.view addSubview:self.view];
-    	SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:fronNavigationController];
+ 
 
 
       
@@ -57,5 +40,7 @@
 */
 
 - (IBAction)pushExample:(id)sender {
+    
+   
 }
 @end

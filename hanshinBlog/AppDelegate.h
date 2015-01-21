@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RearViewController.h"
+#import "SlideNavigationController.h"
 @class ViewController;
-@class SWRevealViewController;
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) ViewController *viewController;
-@property (strong, nonatomic) SWRevealViewController *viewControllerRear;
+
 @end
 

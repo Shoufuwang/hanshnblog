@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationContorllerAnimatorFade.h"
+#import "SlideNavigationContorllerAnimatorSlide.h"
+#import "SlideNavigationContorllerAnimatorScale.h"
+#import "SlideNavigationContorllerAnimatorScaleAndFade.h"
+#import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 
 @interface RearViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *table;
+
 
 @end

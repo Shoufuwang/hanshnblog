@@ -22,16 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
    
-    RearMasterTableViewController *rearViewController = [[RearMasterTableViewController alloc] init];
-    FrontViewControllerImage *frontViewController = [[FrontViewControllerImage alloc] init];
+   // RearMasterTableViewController *rearViewController = [[RearMasterTableViewController alloc] init];
+  //  FrontViewControllerImage *frontViewController = [[FrontViewControllerImage alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RearViewController *left =[[RearViewController alloc]  initWithNibName:@"RearViewController bundle" bundle:nil];
+    
+    [SlideNavigationController sharedInstance].rightMenu=left;
+    
+    
+    
+    
     // Override point for customization after application launch.
-    
-    
-    
-    
-    
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
